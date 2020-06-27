@@ -13,7 +13,8 @@ public enum GameplayOption implements ISyncedOption
     ENABLE_THIRST("Enable Thirst"),
     ENABLE_PEACEFUL("Enable Peaceful"),
     ENABLE_THIRST_WORLD("Enable drinking from water blocks"),
-    ENABLE_THIRST_RAIN("Enable drinking from rain");
+    ENABLE_THIRST_RAIN("Enable drinking from rain"),
+    THIRSTY_RATE("Scale of thirsty time");
     
     private final String optionName;
     

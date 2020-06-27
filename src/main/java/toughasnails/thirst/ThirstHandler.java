@@ -204,7 +204,8 @@ public class ThirstHandler extends StatHandlerBase implements IThirst
     {
     	if (SyncedConfig.getBooleanValue(GameplayOption.ENABLE_THIRST))
     	{
-    		this.thirstExhaustionLevel = Math.min(this.thirstExhaustionLevel + amount, 40.0F);
+    		this.thirstExhaustionLevel = Math.min(this.thirstExhaustionLevel +
+                    amount * SyncedConfig.getFloatValue(GameplayOption.THIRSTY_RATE), 40.0F);
     	}
     }
     

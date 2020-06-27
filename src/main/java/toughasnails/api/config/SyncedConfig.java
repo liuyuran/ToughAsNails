@@ -23,6 +23,11 @@ public class SyncedConfig
         return Integer.valueOf(getValue(option));
     }
 
+    public static float getFloatValue(ISyncedOption option)
+    {
+        return Float.valueOf(getValue(option));
+    }
+
     public static String getValue(ISyncedOption option)
     {
         return optionsToSync.get(option.getOptionName()).value;
